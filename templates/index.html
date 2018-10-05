@@ -1,0 +1,28 @@
+<h2>Earthquik Database</h2>
+<br>
+<p>
+ <form action="/query1" method="get">
+ 	Show Earthquicks with magnitude greater than 5.0 
+	<input type="submit" value="Print">
+</form>
+
+ <form action="/query2">
+	 Range of Earthquick Magnitutde <br> From : <input type="number" name="range1" max="10" min="0" step=".1" value="1.0"> To : <input type="number" name="range2" max="10" min="0" step=".1" value="5.0"> 
+	From Day: <input type="date" name="starting" max="07-05-2018" min="05-06-2018">
+	To Day:   <input type="date" name="ending" max="06-06-2018" min="06-05-2018">
+	<input type="submit" value="Search">
+</form>
+ <form action="/query3" method="get">
+  Location: <input type="text" name="location" maxlength="50" width="10" value="Volcano"> 
+  Enter Range : <input type="number" min= "0" name="km" value="10" step="5"> Kilo Meter(s)  
+  <input type="submit" value="Show">
+</form>
+<form action="/query4" method="get">
+  Longitude <input type="number" name="longitude" step=".0000001" value="50"> Latitude <input type="number" name="latitude" value="50" step=".0000001"> Range <input type="number" name="range" min="0" step=".1" value=".5">  
+  <input type="submit" value="Show">
+</form>
+ <form action="/query5" method="get">
+	 Does Big Earthquick( Magnitude > 4.0) occure at Night?  
+  <input type="submit" value="Let's Find!">
+</form>
+</p>

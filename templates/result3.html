@@ -1,0 +1,42 @@
+<h2>Result of Query</h2>
+<p>
+<font size="2" face="Courier New" >
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: left;
+}
+</style>
+
+<table style='font-family:"Courier New", Courier, monospace; font-size:80%'>
+<tr>
+{% for hd in headers %}
+	<th> {{hd}} </th>
+{% endfor %}
+</tr>
+
+<tr>
+{% for hd in headers %}
+	<td> {{headers[hd]}} </td>
+{% endfor %}
+</tr>
+</table>
+
+<script>
+var night = headers["NightQuakes"];
+var day = headers["DayQuakes"]
+if (parseInt(night,10) < parseInt(day,10)) {
+	alert("It's a Myth. !! \n Sleep Sound !!");
+} 
+else {
+	alert("There are indeed more Earthquakes in Night, So Keep Safe!!!");
+}
+</script>
+
+</p>

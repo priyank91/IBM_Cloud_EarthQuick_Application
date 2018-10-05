@@ -1,0 +1,7 @@
+applications:
+- name: eq_app
+  memory: 256M
+  command: python eq_app.py
+  random-route: true
+  services:
+  - database
